@@ -2,7 +2,10 @@ import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 
 export default class LoginController {
   
-  public async home({ inertia }: HttpContextContract) {
+  public async home({ inertia, auth }: HttpContextContract) {
+    if(auth.user) {
+      return inertia.render('home', {isLogin: true})
+    }
     return inertia.render('home')
   }
 

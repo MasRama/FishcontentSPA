@@ -3,6 +3,8 @@
   import { inertia } from '@inertiajs/inertia-svelte'
   import Navbar from '../Components/navbar.svelte'
 
+  export let isLogin
+
   let email=''
   let password=''
 
@@ -14,7 +16,11 @@
     <body class="font-poppins">
         <header class="bg-slate-100">
 
-          <Navbar/>
+            {#if isLogin}
+            <Navbar isLogin="true"/>
+                {:else}
+            <Navbar/>    
+            {/if}
 
           <section class="swiper hero-sections h-max  lg:h-[82vh] ">
             <div class="swiper-wrapper flex items-center pb-24">

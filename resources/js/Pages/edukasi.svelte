@@ -1,13 +1,19 @@
 <script>
     import { inertia } from '@inertiajs/inertia-svelte'
     import Navbar from '../Components/navbar.svelte'
+
+    export let isLogin
   </script>
 
 
 <div>
     <body class="font-poppins bg-slate-100">
         <header class="bg-slate-100">
-            <Navbar/>
+            {#if isLogin}
+            <Navbar isLogin="true"/>
+                {:else}
+            <Navbar/>    
+            {/if}
         </header>
         <main class="container mx-auto">
             <h2 class="text-center mt-28">Ruang Edukasi</h2>

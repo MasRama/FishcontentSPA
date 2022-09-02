@@ -21,11 +21,17 @@ import Route from '@ioc:Adonis/Core/Route'
 
 Route.get('/', 'LoginController.home')
 
-Route.get('/edukasi', async ({ inertia }) => {
+Route.get('/edukasi', async ({ inertia, auth }) => {
+  if(auth.user) {
+    return inertia.render('edukasi', {isLogin: true})
+  }
   return inertia.render('edukasi')
 })
 
-Route.get('/sharing', async ({ inertia }) => {
+Route.get('/sharing', async ({ inertia, auth }) => {
+  if(auth.user) {
+    return inertia.render('sharing', {isLogin: true})
+  }
   return inertia.render('sharing')
 })
 
