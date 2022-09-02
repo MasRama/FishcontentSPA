@@ -1,0 +1,355 @@
+<script>
+    import { inertia } from '@inertiajs/inertia-svelte'
+    import {Navigation} from '../scripts/navbar'
+    import { onMount } from 'svelte';
+
+    onMount(async () => {
+        Navigation()
+  });
+    
+    
+</script>
+
+
+<body class=" font-poppins">
+    <header class="bg-slate-100">
+      <nav class="">
+        <div class="container relative flex justify-between mx-auto py-6">
+          <a class="flex items-center gap-4 " href="/">
+            <img
+              src="../../images/icon.png"
+              alt="logo"
+              class="max-w-[3rem] rounded-md"
+            />
+            <span class="text-base max-w-[7rem] md:text-lg md:max-w-max lg:text-2xl uppercase font-bold">fishcontent indonesia</span>
+          </a>
+          <div class=" flex lg:hidden items-center">
+            <button class="nav__toggler">
+                <i class="fa-solid fa-bars text-3xl " ></i>
+            </button>
+          </div>
+          <ul class="nav__links rounded-lg hidden absolute top-24 left-0 w-full flex-col gap-6 p-14 bg-white z-10 shadow-2xl lg:static lg:flex lg:p-0 lg:bg-inherit lg:flex-row items-center lg:shadow-none  lg:w-max lg:rounded-none lg:gap-8 xl:gap-12 list-none  ">
+            <li><a href="/" class="link">beranda</a></li>
+            <li><a href="./pages/edukasi.html" class="link ">edukasi</a></li>
+            <li><a href="./pages/sharing.html" class="link">sharing</a></li>
+            <li><a href="/" class="link">belanja</a></li>
+             <button
+                class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900"
+                type="button"
+                data-drawer-target="drawer-right-example"
+                data-drawer-show="drawer-right-example"
+                data-drawer-placement="right"
+                aria-controls="drawer-right-example">
+                Dashboard
+            </button>
+          </ul>
+          <aside id="drawer-right-example" class="rounded fixed z-40 h-screen p-4 overflow-y-auto w-72  bg-login bg-sidebar bg-1.25  bg-no-repeat " tabindex="-1" aria-labelledby="drawer-right-example" >
+            <div class="overflow-y-auto py-4 px-3 bg-transparent rounded ">
+                <a href="/" class="flex items-center pl-2.5 mb-5">
+                <img src="../images/icon.png" alt="logo" class="mr-5 h-11 sm:h-11 rounded-full" />
+                <span class="self-center text-xl font-semibold whitespace-nowrap ">Fishcontent <br />Indonesia</span>
+                </a>
+                <ul class="space-y-2">
+                <li>
+                    <a href="/" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <svg
+                        aria-hidden="true"
+                        class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="flex-1 ml-3 whitespace-nowrap">Profil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <svg
+                        aria-hidden="true"
+                        class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"></path>
+                        <path d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path>
+                    </svg>
+                    <span class="flex-1 ml-3 whitespace-nowrap">Riwayat Pesanan</span>
+                    <span class="inline-flex justify-center items-center p-3 ml-3 w-3 h-3 text-sm font-medium text-blue-600 bg-blue-200 rounded-full dark:bg-blue-900 dark:text-blue-200">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <svg
+                        aria-hidden="true"
+                        class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                        fill-rule="evenodd"
+                        d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
+                        clip-rule="evenodd"
+                        ></path>
+                    </svg>
+                    <span class="flex-1 ml-3 whitespace-nowrap">Toko</span>
+                    <span class="inline-flex justify-center items-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300">Mitra</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <svg aria-hidden="true" class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                        <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                    </svg>
+                    <span class="ml-3">Pengaturan</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <svg
+                        aria-hidden="true"
+                        class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                        d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                        ></path>
+                    </svg>
+                    <span class="flex-1 ml-3 whitespace-nowrap">Kursus</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <svg
+                        aria-hidden="true"
+                        class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                        fill-rule="evenodd"
+                        d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
+                        clip-rule="evenodd"
+                        ></path>
+                    </svg>
+                    <span class="flex-1 ml-3 whitespace-nowrap">Log Out</span>
+                    </a>
+                </li>
+                <li>
+                    <p class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg "></p>
+                </li>
+                <li>
+                    <p class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg "></p>
+                </li>
+                <li>
+                    <p class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg "></p>
+                </li>
+                <li>
+                    <p class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg "></p>
+                </li>
+                </ul>
+            </div>
+        </aside>
+                
+        </div>
+      </nav>
+      <section class="swiper hero-sections h-max  lg:h-[82vh] ">
+        <div class="swiper-wrapper flex items-center pb-24">
+            <div class="swiper-slide flex items-center">
+                <div class="container mx-auto flex flex-col-reverse text-center items-center justify-between gap-8 lg:gap-16 lg:flex-row lg:text-left ">
+                    <div class=" basis-[40%] ">
+                        <h1 class=" mb-6 text-4xl  font-bold md:text-5xl lg:leading-snug lg:text-6xl lg:mb-8">Fishcontent Indonesia</h1>
+                        <p class="text-base lg:text-lg">Platform komunitas perikanan dan akuatik di Indonesia</p>
+                        <div class="mt-16 lg:mt-24">
+                            <a href="/" class="btn btn-secondary inline py-4">Tentang kami</a>
+                        </div>
+                    </div>  
+                    <div class="basis-[50%]">
+                        <img  src="../images/fishcontent.png" alt="fishcontent">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide flex items-center">
+                <div class="container mx-auto flex flex-col-reverse text-center items-center justify-between gap-8 lg:gap-16 lg:flex-row lg:text-left ">   
+                    <div class=" basis-[50%] ">
+                        <h1 class=" mb-6 text-4xl  font-bold md:text-5xl lg:leading-snug lg:text-6xl lg:mb-8">Belanja produk aquatik cuma tinggal klik!</h1>
+                        <p class="text-base lg:text-lg">Dapatkan ikan dan produk aquatik bekualitas langsung dari tangan pertama!</p>
+                        <div class="mt-16 lg:mt-24">
+                            <a href="/" class="btn btn-secondary inline py-4">Ayo belanja</a>
+                        </div>
+                    </div>  
+                    <div class="basis-[50%] w-fit">
+                        <img  src="../images/landing1.png" alt="fishcontent">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide flex items-center">
+                <div class="container mx-auto flex flex-col-reverse text-center items-center justify-between gap-8 lg:gap-16 lg:flex-row lg:text-left">
+                    <div class=" basis-[50%] ">
+                        <h1 class=" mb-6 text-4xl  font-bold md:text-5xl lg:leading-snug lg:text-6xl lg:mb-8">Sharing dengan para ahli!</h1>
+                        <p class="text-base lg:text-lg">Diskusi dan Konsultasi bersama rekan-rekan yang kompeten di bidang aquatik dan perikanan</p>
+                        <div class="mt-16 lg:mt-24">
+                            <a href="/" class="btn btn-secondary inline py-4">Sharing</a>
+                        </div>
+                    </div>  
+                    <div class="basis-[50%]">
+                        <img  src="../images/anemon.png" alt="fishcontent">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide flex items-center">
+                <div class="container mx-auto flex flex-col-reverse text-center items-center justify-between gap-8 lg:gap-16 lg:flex-row lg:text-left">
+                    <div class=" basis-[50%] ">
+                        <h1 class=" mb-6 text-4xl  font-bold md:text-5xl lg:leading-snug lg:text-6xl lg:mb-8">Ayo belajar akuatik dan perikanan!</h1>
+                        <p class="text-base lg:text-lg">Edukasi seputar Akuatik dan Perikanan menarik dan menyenangkan!</p>
+                        <div class="mt-16 lg:mt-24">
+                            <a href="/" class="btn btn-secondary inline py-4">Belajar</a>
+                        </div>
+                    </div>  
+                    <div class="basis-[50%]">
+                        <img  src="../images/edukasi.png" alt="edukasi">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="  swiper-pagination"></div>
+     </section>
+    </header>
+    <main>
+        <section class="container mx-auto flex flex-col  py-16 items-center text-center lg:py-52 lg:flex-row lg:text-left">
+            <div class="basis-1/2 ">
+                <img class="mx-auto" src="../images/sam2.png" alt="">
+            </div>
+            <div class="basis-1/2 pr-4 ">  
+                <h2 class="mb-8 ">Tentang kami</h2>
+                <p class=" text-base leading-relaxed mb-4 lg:text-lg "><b>Fishcontent Indonesia</b> adalah startup dan platform komunitas pecinta aquatik di indonesia yang berdiri pada tahun 2019. Yang melatarbelakangi berdirinya startup ini adalah keragaman biota air dan Perikanan di indonesia sangatlah besar. </p>
+                <p class="text-base leading-relaxed lg:text-lg">Namun untuk merawat atau membudidayakanya seringkali banyak orang yang belum faham mengenai tata cara yang benar dan butuh edukasi. Untuk itu platform ini hadir sebagai sarana edukasi untuk masyarakat indonesia. </p>
+            </div>
+        </section>
+        <section class="container mx-auto text-center mt-16 ">
+            <h2 class="mb-8">Testimoni</h2>
+            <p class="text-base lg:text-lg">Beberapa testimoni dari anggota komunitas dan pelanggan</p>
+            <div class="swiper testimonial h-max gap-y-12 lg:mt-16 ">
+                <div class="swiper-wrapper mt-8 pb-24 flex items-center">
+                    <div class="swiper-slide flex justify-center items-start ">
+                        <div class=" shadow-xl py-10 px-8 flex flex-col items-center  rounded-xl w-11/12 lg:w-[800px] hover:shadow-2xl hover:scale-[1.02] duration-300 ">
+                            <img class="max-w-[7rem] mb-3" src="../images/client2.png" alt="">
+                            <h5 class="mb-6">Diana Pungki</h5>
+                            <p class="text-sm">Saya suka sekali merawat ikan hias. Namun entah kenapa ikan rawatan saya selalu mati terus. saya bingung solusinya bagaimana. Setelah kenal platform ini saya belajar cara merawat ikan yang benar ternyata selama ini saya salah dalam pemberian pakan. Dari yang telah saya pelajari di platform ini pembrian pakan yang berlebihan juga dapat menyebabkan kematian pada ikan. platform ini sangat cocok untuk belajar mengenai perikanan. </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center items-start">
+                        <div class="shadow-xl py-10 px-8 flex flex-col items-center  rounded-xl w-11/12 lg:w-[800px] hover:shadow-2xl hover:scale-[1.02] duration-300 ">
+                            <img class="max-w-[7rem] mb-3" src="../images/client3.png" alt="">
+                            <h5 class="mb-6">Ferrari firmansyah</h5>
+                            <p class="text-sm">Saya adalah peternak ikan, saya kesulitan untuk memasarkan ikan saya. Dengan aplikasi ini saya belajar bagaimana pemasaran di sektor perikanan. Alhamdulillah sekarang saya dapat menjangkau pelanggan di area yang lebih luas.  </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center items-start ">
+                        <div class=" shadow-xl py-10 px-8 flex flex-col items-center rounded-xl w-11/12 lg:w-[800px] hover:shadow-2xl hover:scale-[1.02] duration-300 ">
+                            <img class="max-w-[7rem] mb-3" src="../images/client1.png" alt="">
+                            <h5 class="mb-6">Fatqan Ramadiansyah</h5>
+                            <p class="text-sm">Sebagai pecinta aquatik saya sayang senang dengan adanya platform ini. Hobi saya pada dunia perikanan bisa tersalurkan. Juga saya tidak perlu bingung lagi untuk mencari produk-produk perikanan yang berkualitas karena adanya platform ini. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination -bottom-3"></div>
+            </div>
+        </section>
+        
+        <section class="mt-36" >
+            <h2 class="mb-16 text-4xl tracking-tight font-bold text-center  ">Hubungi kami</h2>
+            <div class="bg-white container mx-auto  flex flex-col-reverse justify-between lg:flex-row lg:mb-8 ">
+                <div class="py-8 lg:py-16 px-4  basis-[768px]">
+                    
+                    <form action="/" class="space-y-8">
+                        <div>
+                            <label for="nama" class="block mb-2 text-sm font-medium ">Nama </label>
+                            <input type="text" id="nama" class=" shadow-sm bg-gray-50 border border-gray-300 rounded-lg  outline-none focus:border-orange-500 block w-full p-2.5 duration-300       "   placeholder="Nama Anda" required>
+                        </div>
+                        <div>
+                            <label for="telp" class="block mb-2 text-sm font-medium">Nomor WhatsApp</label>
+                            <input type="tel" id="telp" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm  outline-none focus:border-orange-500 duration-300     "  placeholder="08....." required>
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium">Email</label>
+                            <input type="email" id="email" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm  outline-none focus:border-orange-500 duration-300      "  placeholder="email@mail.com" required>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="message" class="block mb-2 text-sm font-medium ">Pesan :</label>
+                            <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 outline-none  focus:border-orange-500 duration-300       "  placeholder="Pesan Anda..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Send message</button>
+                    </form>
+                </div>
+                <div class=" flex basis-auto items-center ">
+                    <img class="mx-auto" src="../images/betta.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container mx-auto mt-0 lg:mt-16 flex flex-col gap-12 py-16  text-center md:flex-row md:gap-18 lg:gap-24 lg:flex-row">
+            <div class="basis-1/4 md:text-left">
+                <a class="flex items-center gap-4 mb-7 justify-center lg:justify-start " href="/">
+                    <img
+                    src="../images/icon.png"
+                    alt="logo"
+                    class="max-w-[3rem] rounded-md"
+                    />
+                    <span class="text-xl capitalize font-bold">fishcontent indonesia</span>
+                </a>
+                <p class="text-base lg:text-lg leading-relaxed ">
+                    Rt.17 Rw.06 Desa Kasri Kec.Bululawang Kab.Malang Malang Jawa timur Indonesia 65166.
+            </div>
+            <div class="basis-3/4 grid grid-cols-1 gap-y-12 text-center justify-center lg:text-left lg:grid-cols-2 xl:grid-cols-3 animate-slidetobottom-reverse ">
+                <div>
+                    <h4 class="mb-6">Pelayanan</h4>
+                    <ul class="flex flex-col gap-2">
+                        <li><a href="/" class="link text-[.9rem] sm:text-base">Edukasi perikanan</a></li>
+                        <li><a href="/" class="link text-[.9rem] sm:text-base">Edukasi Aquatik</a></li>
+                        <li><a href="/" class="link text-[.9rem] sm:text-base">Marketplace aquatik</a></li>
+                        <li><a href="/" class="link text-[.9rem] sm:text-base">Mitra Marketplace</a></li>
+                        <li><a href="/" class="link text-[.9rem] sm:text-base">Komunitas Perikanan</a></li>
+                        <li><a href="/" class="link text-[.9rem] sm:text-base">Komunitas Aquatik</a></li>
+                        <li><a href="/" class="link text-[.9rem] sm:text-base">Pakar ahli perikanan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="mb-6">Kontak</h4>
+                    <ul class="flex flex-col gap-2">
+                        <li class="text-[.9rem] sm:text-base">fishcontent.idn@gmail.com </li>
+                        <li class="text-[.9rem] sm:text-base">M. Ferrari Firmansyah </li>
+                        <li class="text-[.9rem] sm:text-base">085155441510 </li>
+                        <li class="text-[.9rem] sm:text-base">@fishcontent.id</li>
+
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="mb-6">Ikuti kami</h4>
+                    <ul class="flex gap-2 justify-center lg:justify-start ">
+                        <li><a href="/" class="flex items-center justify-center w-12 h-12 rounded-full bg-slate-200 hover:bg-black hover:text-white duration-300"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="/" class="flex items-center justify-center w-12 h-12 rounded-full bg-slate-200 hover:bg-black hover:text-white duration-300"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="/" class="flex items-center justify-center w-12 h-12 rounded-full bg-slate-200 hover:bg-black hover:text-white duration-300"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="/" class="flex items-center justify-center w-12 h-12 rounded-full bg-slate-200 hover:bg-black hover:text-white duration-300"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+        <div class="bg-gray-200 p-6 text-center leading-relaxed ">
+            <p class="text-xs lg:text-sm ">Copyright © 2021 All Rights Reserved By Fishcontent Indonesia </p>
+        </div>
+    </footer>
+  </body>
+
+
