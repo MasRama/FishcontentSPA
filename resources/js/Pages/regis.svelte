@@ -83,7 +83,7 @@
         <div class="w-11/12  max-w-lg lg:max-w-screen-2xl flex flex-col gap-6  lg:gap-0 mx-auto  justify-center lg:flex-row lg:justify-between  ">
             <div class=" basis-2/5 md:mt-16 lg:mt-[7%]">
                 <h2 class="text-center text-xl mb-5 sm:text-2xl md:text-3xl md:leading-normal lg:text-3xl lg:leading-normal xl:leading-[1.5] lg:text-left xl:text-4xl">Jadilah bagian dari FishContent Indonesia untuk menikmati fasilitas yang ada.</h2>
-                <p class="text-lg hidden lg:block font-medium opacity-100">Sudah memiliki akun ?, login <a class="text-blue-700" href="./login"> disini!</a></p>
+                <p class="text-lg hidden lg:block font-medium opacity-100">Sudah memiliki akun ?, login <a class="text-blue-700" use:inertia href="./login"> disini!</a></p>
             </div>
             <div class="basis-[45%]">
                 <form on:submit|preventDefault={handleSubmit}>
