@@ -37,7 +37,7 @@
         <div class="w-11/12  max-w-lg lg:max-w-screen-2xl flex flex-col gap-6 lg:gap-0 mx-auto justify-center lg:flex-row lg:justify-between  ">
             <div class="basis-2/5 lg:mt-[1%]">
                 <h2 class="text-center text-2xl mb-5 leading-normal lg:text-left lg:text-3xl xl:text-4xl xl:leading-[1.6] lg:leading-[1.6] ">Jadilah bagian dari FishContent Indonesia untuk menikmati fasilitas yang ada.</h2>
-                <p class="text-lg hidden lg:block font-medium opacity-100">Belum memililki akun? lakukan registrasi <a class="text-blue-700" use:inertia href="/regis">disini!</a></p>
+                <p class="text-lg hidden lg:block font-medium opacity-100">Belum memililki akun? lakukan registrasi <a class="text-blue-700" use:inertia href="/regis"> disini!</a></p>
             </div>
             <div class="basis-96 ">
 
@@ -61,7 +61,7 @@
                     </div>
                     <a href="/" class="block text-right mb-8 ">lupa password?</a>
                     <input type="submit" value="Login" class="btn btn-third w-full">
-                    <p class="mt-5 text-base font-medium opacity-100 lg:hidden">Belum memililki akun ?, lakukan registrasi<a class="text-blue-700" href="./regis.html"> disini!</a></p>
+                    <p class="mt-5 text-base text-center  font-medium opacity-100 lg:hidden ">Belum memililki akun ?, lakukan registrasi <a class="text-blue-700" href="./regis"> disini!</a></p>
                 </form>
             </div>
         </div>

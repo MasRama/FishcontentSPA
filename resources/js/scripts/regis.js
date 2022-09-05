@@ -2,7 +2,7 @@ export function HandleRegist() {
     // validate function
 const validateEmail = (e) => {
     const value = e.value;
-    if (!value.match(/[a-z]@[a-z]{4,}[.]/g)) return { isValid : false ,message : "Format email harus menggunakan @"}
+    if (!value.match(/[a-zA-Z1-9]{2,}@[a-z]{4,}[.]/g)) return { isValid : false ,message : "Format email harus menggunakan @"}
     return { isValid: true, message: '' }
 }
 const validateTel = (e) => {
