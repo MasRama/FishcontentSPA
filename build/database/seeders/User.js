@@ -8,11 +8,11 @@ const User_1 = __importDefault(global[Symbol.for('ioc.use')]("App/Models/User"))
 class default_1 extends Seeder_1.default {
     async run() {
         await User_1.default.create({
-            nama: 'Ramaa',
-            telp: '085745726082',
-            alamat: 'Jl. KH Hasyim Ashari, Kec Bululawang, Kabupaten Malang, Jawa Timur',
-            email: 'aa@gmail.com',
-            password: 'aa',
+            nama: 'Demo',
+            telp: '0811111',
+            alamat: 'Jl. Demo, Kec Demo, Kabupaten Demo, Demo',
+            email: 'demo@gmail.com',
+            password: 'demo',
             is_verified: true
         });
     }

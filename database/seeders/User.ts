@@ -4,11 +4,11 @@ import User from 'App/Models/User'
 export default class extends BaseSeeder {
   public async run () {
      await User.create({
-      nama: 'Ramaa',
-      telp: '085745726082',
-      alamat: 'Jl. KH Hasyim Ashari, Kec Bululawang, Kabupaten Malang, Jawa Timur',
-      email: 'aa@gmail.com',
-      password: 'aa',
+      nama: 'Demo',
+      telp: '0811111',
+      alamat: 'Jl. Demo, Kec Demo, Kabupaten Demo, Demo',
+      email: 'demo@gmail.com',
+      password: 'demo',
       is_verified: true
      })
   }
