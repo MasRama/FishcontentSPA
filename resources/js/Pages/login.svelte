@@ -16,9 +16,8 @@
   });
   </script>
 
-  <body class=" bg-login bg-cover  font-poppins ">
+  <body class=" bg-login bg-cover min-h-screen  font-poppins  ">
     <header class="">
-
         <nav class="">
             <div class="container relative flex justify-between lg:justify-end mx-auto py-6 ">
               <a class="flex items-center gap-4 " use:inertia href="/" >
@@ -33,7 +32,7 @@
           </nav>
 
     </header>
-    <main class="w-full min-h-[85vh] flex items-center justify-center">
+    <main class="w-full min-h-[90vh] flex items-center justify-center">
         <div class="w-11/12  max-w-lg lg:max-w-screen-2xl flex flex-col gap-6 lg:gap-0 mx-auto justify-center lg:flex-row lg:justify-between  ">
             <div class="basis-2/5 lg:mt-[1%]">
                 <h2 class="text-center text-2xl mb-5 leading-normal lg:text-left lg:text-3xl xl:text-4xl xl:leading-[1.6] lg:leading-[1.6] ">Jadilah bagian dari FishContent Indonesia untuk menikmati fasilitas yang ada.</h2>
@@ -56,7 +55,7 @@
                     <div class="relative mb-2 ">
                         <label for="password required-in" class="text-base block lg:text-lg font-medium mb-1">Masukkan password</label>
                         <input type="password" bind:value="{password}" name="Password" class="input"  id="password" >
-                        <button class="absolute top-[2.7rem] right-2.5 text-slate-400 hover:text-slate-800 peer-invalid:bottom-[3.4rem]"><i class="fa-solid fa-eye"></i></button>
+                        <button class="absolute top-[72%] -translate-y-[50%] right-2.5 text-slate-400 hover:text-slate-800 "><i class="fa-solid fa-eye"></i></button>
                         <small class="text-red-600 mt-2 hidden validate"></small>
                     </div>
                     <a href="/" class="block text-right mb-8 ">lupa password?</a>

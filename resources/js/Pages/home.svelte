@@ -22,7 +22,7 @@
             <Navbar/>    
             {/if}
 
-          <section class="swiper hero-sections h-max  lg:h-[82vh] ">
+          <section class="swiper hero-sections h-max  lg:h-[87vh]">
             <div class="swiper-wrapper flex items-center pb-24">
                 <div class="swiper-slide flex items-center">
                     <div class="container mx-auto flex flex-col-reverse text-center items-center justify-between gap-8 lg:gap-16 lg:flex-row lg:text-left">
@@ -34,7 +34,7 @@
                             </div>
                         </div>  
                         <div class="basis-[50%]">
-                            <img src="images/fishcontent.png" alt="fishcontent">
+                            <img src="images/logo.png" alt="fishcontent">
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </div>
-            <div class="  swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
          </section>
         </header>
         <main>

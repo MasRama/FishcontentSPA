@@ -10,7 +10,7 @@
     onMount(async () => {
         Navigation()
         Cdn()
-  });
+    });
 </script>
 
 {#if isLogin}
@@ -44,7 +44,7 @@
           Dashboard
       </button>
     </ul>
-    <aside id="drawer-right-example" class="rounded fixed z-40 h-screen p-4 overflow-y-auto w-72  bg-login bg-center bg-1.25  bg-no-repeat " tabindex="-1" aria-labelledby="drawer-right-example" >
+    <aside id="drawer-right-example" class="rounded fixed z-40 h-screen p-4 overflow-y-auto w-72  bg-login   bg-cover bg-center sm:bg-1.25  bg-no-repeat " tabindex="-1" aria-labelledby="drawer-right-example" >
       <div class="overflow-y-auto py-4 px-3 bg-transparent rounded ">
           <a href="/" class="flex items-center pl-2.5 mb-5">
           <img src="../../images/icon.png" alt="logo" class="mr-5 h-11 sm:h-11 rounded-full" />

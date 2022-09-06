@@ -79,7 +79,7 @@
         </div>
       </nav>
     </header>
-    <main class="w-full min-h-[85vh] my-16 sm:my-0 flex items-center justify-center">
+    <main class="w-full min-h-[90vh] my-16 sm:my-0 flex items-center justify-center">
         <div class="w-11/12  max-w-lg lg:max-w-screen-2xl flex flex-col gap-6  lg:gap-0 mx-auto  justify-center lg:flex-row lg:justify-between  ">
             <div class=" basis-2/5 md:mt-16 lg:mt-[7%]">
                 <h2 class="text-center text-xl mb-5 sm:text-2xl md:text-3xl md:leading-normal lg:text-3xl lg:leading-normal xl:leading-[1.5] lg:text-left xl:text-4xl">Jadilah bagian dari FishContent Indonesia untuk menikmati fasilitas yang ada.</h2>
@@ -144,7 +144,7 @@
                     </div>
                     <div class="flex flex-col sm:flex-row gap-2 lg:gap-8">
                         <div class="basis-1/2  relative mb-2 ">
-                            <label for="detail-in" class="text-base block lg:text-lg font-medium mb-1">Detail</label>
+                            <label for="detail-in" class="text-base block lg:text-lg font-medium mb-1">Detail Alamat (opsional)</label>
                             <input type="text" name="Detail" bind:value={jalan}  class="input"  id="detail" >
                             <small class="mt-2 text-red-600 hidden validate"></small>
                         </div>
@@ -158,13 +158,13 @@
                         <div class="basis-1/2  relative mb-2 ">
                             <label for="password-in" class="text-base block lg:text-lg font-medium mb-1">Password</label>
                             <input type="password" name="Password" bind:value="{password}" class="input"  id="pasword"   >
-                            <button class="absolute top-10 right-2.5 text-slate-400 hover:text-slate-800 "><i class="fa-solid fa-eye"></i></button>
+                            <button class="absolute top-[72%] -translate-y-[50%] right-2.5 text-slate-400 hover:text-slate-800 "><i class="fa-solid fa-eye"></i></button>
                             <small class="text-red-600 mt-2 hidden validate"></small>
                         </div>
                         <div class="basis-1/2  relative mb-2 ">
                             <label for="passwordConfirm-in" class="text-base block lg:text-lg font-medium mb-1">Konfirmasi Password</label>
                             <input type="password" name="Konfirmasi Password" value="" class="input" id="paswordConfir" >
-                            <button class="absolute top-10 right-2.5 text-slate-400 hover:text-slate-800 "><i class="fa-solid fa-eye"></i></button>
+                            <button class="absolute top-[72%] -translate-y-[50%] right-2.5 text-slate-400 hover:text-slate-800 "><i class="fa-solid fa-eye"></i></button>
                             <small class="text-red-600 mt-2 hidden validate">Password tidak sama</small>
                         </div>
                     </div>

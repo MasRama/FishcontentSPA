@@ -922,6 +922,8 @@ h5 {
   min-height: 85vh;
 }
 
+
+
 .w-full {
   width: 100%;
 }
@@ -1215,7 +1217,7 @@ h5 {
 }
 
 .bg-login {
-  background-image: url('../../public/images/texture.svg') ;
+  background-image: url('../../public/images/texture.png') ;
 }
 
 .bg-cover {
@@ -1771,6 +1773,9 @@ h5 {
 
   .lg\:h-\[82vh\] {
     height: 82vh;
+  }
+  .lg\:h-\[87vh\] {
+    height: 87vh;
   }
 
   .lg\:w-max {

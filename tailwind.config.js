@@ -11,7 +11,7 @@ module.exports = {
 
     extend: {
         backgroundImage : {
-            login : "url('../../public/images/texture.svg') "
+            login : "url('../../public/images/texture.png') "
          },
 
          backgroundPosition: {
