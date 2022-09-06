@@ -169,7 +169,7 @@
                         </div>
                     </div>
                     <input type="submit" value="Buat akun" class="mt-8 btn btn-third w-full">
-                    <p class="mt-5 text-base text-center lg:text-left font-medium opacity-100 lg:hidden">Sudah memililki akun ?, login <a class="text-blue-700" href="./login"> disini!</a></p>
+                    <p class="mt-5 text-base text-center lg:text-left font-medium opacity-100 lg:hidden">Sudah memililki akun ?, login <a class="text-blue-700" use:inertia href="/login"> disini!</a></p>
                 </form>
             </div>  
         </div>

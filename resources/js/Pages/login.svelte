@@ -61,7 +61,7 @@
                     </div>
                     <a href="/" class="block text-right mb-8 ">lupa password?</a>
                     <input type="submit" value="Login" class="btn btn-third w-full">
-                    <p class="mt-5 text-base text-center  font-medium opacity-100 lg:hidden ">Belum memililki akun ?, lakukan registrasi <a class="text-blue-700" href="./regis"> disini!</a></p>
+                    <p class="mt-5 text-base text-center  font-medium opacity-100 lg:hidden ">Belum memililki akun ?, lakukan registrasi <a class="text-blue-700" use:inertia href="/regis">disini!</a></p>
                 </form>
             </div>
         </div>
